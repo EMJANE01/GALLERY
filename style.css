@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bebas+Neue&family=Bruno+Ace&family=Bruno+Ace+SC&family=Cinzel&family=Cinzel+Decorative&family=Foldit:wght@200&family=Inconsolata:wght@300&family=Lobster&family=Montserrat:wght@100;600&family=Nunito+Sans&family=Rajdhani&family=Raleway:wght@100;300&family=Tangerine&display=swap');
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+main
+{
+    padding: 20px;
+}
+
+a
+{
+    text-decoration: none;
+    
+}
+
+ul
+{
+    list-style: none;
+}
+
+.header
+{
+    background-color: black;
+   
+    box-shadow: 1px 1px 5px 0px var(white);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    color:#ffffff;
+}
+
+.logo
+{
+    display: inline-block;
+    color:#dcecea;
+    font-size: 60px;
+    margin-left: 10px;
+    width: 10px;
+}
+
+.nav
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background:black;
+    opacity:0.9;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .5s ease-out;
+    text-align: center;
+}
+
+.menu a
+{
+    display: block;
+    padding: 30px;
+    color:#ffffff
+}
+
+.menu a:hover
+{
+    background-image: url(https://cdn.pixabay.com/animation/2023/03/19/02/34/02-34-11-741_512.gif);
+    width: 100%;
+    color:#ffffff
+  
+}
+
+.hamb
+{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+
+.hamb-line 
+{
+    background: var(white);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 44px;
+    
+}
+
+.hamb-line::before,
+.hamb-line::after
+{
+    background: var(white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before
+{
+    top: 5px;
+}
+
+.hamb-line::after
+{
+    top: -5px;
+}
+
+.side-menu 
+{
+    display: none;
+}
+
+.side-menu:checked ~ nav
+{
+    max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line 
+{
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before 
+{
+    transform: rotate(-45deg);
+    top:0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after 
+{
+    transform: rotate(45deg);
+    top:0;
+}
+
+@media (min-width: 768px)
+{
+    .nav
+    {
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+
+    .menu li
+    {
+        float: left;
+    }
+
+    .menu a:hover
+    {
+        background-color: transparent;
+        color: var(--green-light)
+    }
+
+    .hamb
+    {
+        display: none;
+    }
+}
+body{
+    background: black;
+    color:#ffffff;
+   
+}
+
+
+.circular--square {
+border-radius: 50%;
+width: 350px;
+margin-left: 15%;
+margin-top: 5%;
+margin-right: 20%;
+
+}
+
+.present{
+    width: 55%;
+    height: 140px;
+    border: 1px solid rgb(142, 226, 226);
+    margin-left: 40%;
+    margin-right: 20%;
+    
+
+   
+
+}
+.resumen{
+    width: 80%;
+    height: 450px;
+   
+    
+}
+h3{
+    color:rgb(141, 240, 207);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Bruno+Ace+SC&family=Chakra+Petch:wght@300&family=Cinzel&family=Cinzel+Decorative&family=Foldit:wght@200&family=Gruppo&family=Inconsolata:wght@300&family=Lobster&family=Montserrat:wght@100;600&family=Nunito+Sans&family=Press+Start+2P&family=Rajdhani:wght@300;400&family=Raleway:wght@100;300&family=Space+Grotesk:wght@300&family=Special+Elite&family=Tangerine&family=VT323&display=swap');
